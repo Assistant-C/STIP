@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fcenter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="service">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="type" type="xs:string" />
+                            <xs:element name="price" type="xs:string" />
+                            <xs:element name="trener">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="surname" type="xs:string" />
+                                        <xs:element name="name" type="xs:string" />
+                                        <xs:element name="parentname" type="xs:string" />
+                                        <xs:element name="education" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="lesson">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="day" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="time" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/lab8content_style.css"?>
+ 
+
+<?xml-model href="lab8.dtd"?>
+<fcenter>
+    <service>
+        <type>Разновидность услуги(УСЛУГА)</type>
+        <price>Цена</price>
+        <trener>
+            <surname>Фамилия</surname>
+            <name>Имя</name>
+            <parentname>Отчество</parentname>
+            <education>Образование</education>
+        </trener>
+        <lesson>
+            <day time="12:30">Вторник</day>
+            <day time="9:40">Четверг</day>
+            <day time="13:00">Суббота</day>
+        </lesson>       
+    </service>
+</fcenter>

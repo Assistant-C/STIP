@@ -1,0 +1,12 @@
+<!ELEMENT fcenter (service)>
+<!ELEMENT service (type,price,trener,lesson)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT trener (surname,name,parentname,education)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT parentname (#PCDATA)>
+<!ELEMENT education (#PCDATA)>
+<!ELEMENT lesson (day+)>
+<!ELEMENT day (#PCDATA)>
+<!ATTLIST day time NMTOKEN #REQUIRED>

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+body{
+    margin: 0;
+}
+
+.button
+{
+    background-color: #1cd390;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border:none;
+    border-bottom: 2px solid #282a35;
+    
+    transition: 0.4s;
+}
+.active {
+    background-color: #12835a !important;
+  }
+.panel 
+{
+    padding: 0 18px;
+    background-color: white;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+.menu
+{
+    margin-left: 20%;
+}
+.Toggle, li
+{
+    background-color: #1cd390;
+    padding: 15px 50px;
+    color: #fff;
+    border: none;
+    width: 180px;
+}
+.Toggle:hover
+{
+cursor: pointer;
+}
+.nav {
+    list-style-type: none;
+    display: none; 
+    margin: 0; 
+    padding: 0;
+    transition: display 0.2s ease-in-out;
+ }
+ .nav  ul {
+    list-style-type: none; 
+    width: 180px;
+    margin: 0; 
+    padding: 0; 
+}
+.nav > li
+{ 
+    width: max-content;
+    position: relative;    
+    background-color: #1cd390;
+    padding: 15px 50px;
+    color: #fff;
+    border-bottom: 1px solid #282a35;
+}
+.nav li ul {
+    position: absolute; 
+    display: none; 
+    top: 0px; 
+    left: 179px; 
+    width: max-content;
+   }
+.nav li ul li{
+    width: max-content; 
+    border-bottom: 1px solid #282a35;
+}
+.pic
+{
+    margin-top: 15px;
+    width: 790px;
+    height: 430px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#picture
+{
+    width: 790px;
+    height: 430px;
+    display: block;
+    transition: 3.5s ease-in-out;
+}
+.rainbowText
+{
+    font-weight: bold;
+}
+.btn-primary , .btn-primary:hover,  .btn-primary:focus  
+{
+    background: #1cd390;
+    border-color: #1cd390;
+}
+.plane {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.plane__text {
+     
+    width: 100px;
+    position: relative;
+    left: 150px;
+    top: 180px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+.Italic
+{
+    font-style: italic;
+    text-align: center;
+}
+
+type{
+    font-size: 24px;
+}
+trener
+{
+    font-size: 20px;
+}
+day {
+    margin: 10px;
+    display: list-item;
+    list-style: disc;
+}
+
+lesson {
+    text-decoration: underline;
+    display: list-item;
+    list-style: square;
+}
+span{
+    color: #1cd390;
+}

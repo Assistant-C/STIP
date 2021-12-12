@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lab2content_style.css">
+   </head>
+<body>
+    <button class="button">Условие лабораторной работы</button>
+    <div class="panel">
+        <p><strong>Вариант 4. </strong>Вертикальное двухуровневое меню, раскрывающееся при щелчке левой кнопкой мыши. 
+            Второй уровень меню скрывается, когда указатель мыши покидает область выбранного пункта или появившегося меню.    
+            </p>          
+    </div>         
+    <button class="button">Результат выполненной работы</button>
+    <div id="content" class="panel">
+         <p>Для открытия меню щёлкните по кнопке "Меню"</p>
+         <div class="menu">
+            <button id="MenuBtn"class="Toggle">Меню</button>
+            <ul id="nav" class="nav">
+                <li>1 уровень</li>
+                <li>1 уровень
+                    <ul class="subnav">
+                        <li>2 уровень</li>
+                        <li>2 уровень</li>
+                    </ul>                    
+                </li>
+                <li>1 уровень</li>
+                <li>1 уровень
+                    <ul class="subnav">
+                        <li>2 уровень</li>
+                        <li>2 уровень</li>
+                        <li>2 уровень</li>
+                    </ul>  
+                </li>
+                <li>1 уровень
+                    <ul class="subnav">
+                        <li>2 уровень</li>
+                    </ul>  
+                </li>
+                <li>1 уровень</li>
+                <li>1 уровень
+                <ul class="subnav">
+                    <li>2 уровень</li>
+                    <li>2 уровень</li>
+                    <li>2 уровень</li>
+                    <li>2 уровень</li>
+                </ul> 
+               </li>
+                <li>1 уровень</li>
+            </ul>
+         </div>            
+    </div> 
+    <button class="button">Ссылки</button>
+    <div class="panel">
+        <a href="https://github.com/Assistant-C/stipLab2"target="_blank"><p>GitHub Repository</p></a>
+    </div> 
+</body>
+<script src="javascript/lab2.js"></script>
+</html>

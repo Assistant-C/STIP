@@ -1,0 +1,49 @@
+<?xml-stylesheet type="text/xsl" href="lab9.xsl"?>
+
+<fcenter>
+    <service>
+        <type>Услуга 1</type>
+        <price>25$</price>
+        <trener>
+            <surname>Ставцев</surname>
+            <name>Максим</name>
+            <parentname>Геннадиевич</parentname>
+            <education>Высшее</education>
+        </trener>
+        <lesson>
+            <day time="12:30">Понедельник</day>
+            <day time="9:40">Среда</day>
+            <day time="13:00">Пятница</day>
+        </lesson>       
+    </service>
+    <service>
+        <type>Услуга 2</type>
+        <price>14$</price>
+        <trener>
+            <surname>Поляев</surname>
+            <name>Антон</name>
+            <parentname>Александрович</parentname>
+            <education>Среднее-специальное</education>
+        </trener>
+        <lesson>
+            <day time="12:30">Вторник</day>
+            <day time="9:40">Четверг</day>
+            <day time="13:00">Суббота</day>
+        </lesson>       
+    </service>
+    <service>
+        <type>Услуга 3</type>
+        <price>18$</price>
+        <trener>
+            <surname>Чабан</surname>
+            <name>Николай</name>
+            <parentname>Александрович</parentname>
+            <education>Без образования</education>
+        </trener>
+        <lesson>
+            <day time="11:30">Вторник</day>
+            <day time="17:40">Четверг</day>
+            <day time="13:20">Суббота</day>
+        </lesson>       
+    </service>
+</fcenter>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lab4content_style.css">
+</head>
+<body>
+    <button class="button">Условие лабораторной работы</button>
+    <div class="panel">
+        
+      
+       
+        
+        
+  
+        <p>1.Cоздать страницу с динамическим содержанием "Проверка значений, введенных пользователем в поля формы для регистрации". Форма должна содержать поля «Имя», «Фамилия», «Наименование организации», «Номер кредитной карты», «Номер телефона», «Адрес электронной почты», кнопки «Отправить» и «Очистить».</p>
+        <p>2.Осуществить проверку заполненности данными всех полей.</p>
+        <p>3.Построить шаблон для проверки данных кредитной карточки с ограничением количества попыток неправильного ввода данных.</p>
+        <p>4.Последняя проверка должна контролировать структуру и содержимое полей (правильность ввода имени и фамилии,номера телефона,электронного адреса.).</p>
+        <p>5.<strong>Вариант 4. </strong>  Дана строка "a1a a2a a3a a4a a5a aba aca". Напишите регулярное
+            выражение, которое найдет строки, в которых по краям стоят буквы "a", а между ними одна цифра.
+          
+            </p>          
+    </div>         
+    <button class="button">Результат выполненной работы</button>
+    <div id="content" class="panel">
+        <h1>&quot;Проверка значений, введенных пользователем в поля формы для регистрации&quot;.</h1>
+        
+        <form action="" class="row">
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="firstname" placeholder="" required>
+                <div class="invalid-feedback" id="error_firstname"></div>
+            </div>
+            <div class="mb-3">
+                <label for="secondname" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="secondname" placeholder="" required>
+                <div class="invalid-feedback" id="error_secondname"></div>
+            </div>
+            <div class="mb-3">
+                <label for="name_org" class="form-label">Наименование организации</label>
+                <input type="text" class="form-control" id="name_org" placeholder="" required>
+
+            </div>
+            <div class="mb-3">
+                <label for="number_card" class="form-label">Номер кредитной карты</label>
+                <input type="text" class="form-control" id="number_card" placeholder="0000111122223333"
+                    maxlength="16" required>
+                <div id="invalidCheck_card" class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone_number" class="form-label">Номер телефона</label>
+                <input type="text" class="form-control" id="phone_number" placeholder="+380000000000" required>
+                <div class="invalid-feedback" id="error_phone_number"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Адрес электронной почты</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <div class="invalid-feedback" id="error_email"></div>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="checkForm()">Отправить</button>
+                <button type="reset" class="btn btn-primary">Очистить</button>
+            </div>
+            <div class="invalid-feedback" id="all_error">
+                Please choose a username.
+            </div>
+        </form>
+       
+    </div> 
+    <button class="button">Ссылки</button>
+    <div class="panel">
+        <a href="https://github.com/Assistant-C/stipLab2"target="_blank"><p>GitHub Repository</p></a>
+    </div> 
+</body>
+<script src="javascript/lab4.js"></script>
+ 
+
+</html>
